@@ -5,6 +5,8 @@ def directors_database
   @_db ||= YAML.load(rot13.call(File.open("directors_db").read.to_s))
 end
 
+def directors_totals(nds)
+   result = {}		   
 director_index = 0
    while director_index < nds.length do
      current_director = nds[director_index][:name]
@@ -12,6 +14,7 @@ director_index = 0
      director_index += 1
    end
    result
+   
 
 
 
