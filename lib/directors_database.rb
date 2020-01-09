@@ -7,7 +7,7 @@ end
 
 def directors_totals(source)
   result = {}
-  
+  director_index 
  
 
 
