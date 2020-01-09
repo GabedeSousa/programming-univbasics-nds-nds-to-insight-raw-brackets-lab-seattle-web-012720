@@ -5,6 +5,7 @@ def directors_database
   @_db ||= YAML.load(rot13.call(File.open("directors_db").read.to_s))
 end
 
+require data
 def directors_totals(nds)
    result = {}
    director_index = 0 
