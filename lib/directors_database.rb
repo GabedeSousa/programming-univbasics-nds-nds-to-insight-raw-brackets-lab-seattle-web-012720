@@ -6,6 +6,7 @@ def directors_database
 end
 
 def directors_totals(source)
+  result = {}
   
  
 
